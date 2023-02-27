@@ -5,7 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print greeting
-        run: echo "Hello my first github action"
+        run: |
+          echo "Hello my first github action"
+          echo "Hey second command"
+          echo "I can npm install as well"
       - name: say goodbye
         run: echo "GOOD BYE :D"
   second-job:
